@@ -9,10 +9,6 @@ typedef struct {
 #define MAX_CITIES 1001
 #define INF 999999 // large enough number to represent an 'infinite' int for cities without direct routes
 
-//int min(int a, int b) {  // minimum distance between two cities
-//    return (a < b) ? a : b;
-//}
-
 // modified Breadth First Search algorithm
 int bfs(int **graph, int N, int C, int R, int E) {
     int *visited = (int *)calloc(N + 1, sizeof(int)); // keeps track of visited cities
